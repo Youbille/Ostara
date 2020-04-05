@@ -8,7 +8,44 @@
 
     <AbsoluteLayout>
         <!-- Place new controls here -->
-        <ImageButton Source
+        <Label Text="OSTARA"
+               FontSize="Large"
+               FontAttributes="Bold"
+               TextColor="DarkOliveGreen"
+               AbsoluteLayout.LayoutBounds="0.5,0.1,0.5,0.1"
+               HorizontalOptions="CenterAndExpand"
+               AbsoluteLayout.LayoutFlags="All">
+            
+        </Label>
+        <ImageButton x:Name = "Nutrition"
+                     Source = "Nutrition.png"
+                     BackgroundColor="Transparent"
+                     AbsoluteLayout.LayoutBounds="0.5,0.3,0.5,0.3"
+                     AbsoluteLayout.LayoutFlags="All"
+                     Clicked="Nutrition_Clicked">
+        </ImageButton>
+        <ImageButton x:Name="Restaurants"
+                     Source="Restaurants.png"
+                     BackgroundColor="Transparent"
+                     AbsoluteLayout.LayoutBounds="0.5,0.6,0.5,0.3"
+                     AbsoluteLayout.LayoutFlags="All"
+                     Clicked="Restaurants_Clicked">
+        </ImageButton>
+        <ImageButton x:Name="LaVieDuVegetarien"
+                     Source="LaVieDuVegetarien.png"
+                     BackgroundColor="Transparent"
+                     AbsoluteLayout.LayoutBounds="0.5,0.9,0.5,0.3"
+                     AbsoluteLayout.LayoutFlags="All"
+                     Clicked ="LaVieDuVegetarien_Clicked">
+        </ImageButton>
+        <ImageButton x:Name="Settings"
+                     Source="settings.png"
+                     BackgroundColor="Transparent"
+                     AbsoluteLayout.LayoutBounds="0,0,0.1,0.1"
+                     AbsoluteLayout.LayoutFlags="All"
+                     Clicked ="Settings_Clicked">
+        </ImageButton>
+
     </AbsoluteLayout>
 
 </ContentPage>

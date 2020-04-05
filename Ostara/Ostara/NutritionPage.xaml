@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Ostara.NutritionPage">
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <ImageButton 
+                Source ="vegeBasket.png"               
+                BackgroundColor="Transparent"
+                AbsoluteLayout.LayoutBounds="0.5,0.05,0.5,0.3"
+                AbsoluteLayout.LayoutFlags="All"
+                Clicked="Basket_OnClicked">
+
+            </ImageButton>
+            <ImageButton 
+                Source ="journaux.png"
+                BackgroundColor="Transparent"
+                AbsoluteLayout.LayoutBounds="0.5,0.35,0.5,0.3"
+                AbsoluteLayout.LayoutFlags="All"
+                Clicked ="News_OnClicked">
+
+            </ImageButton>
+            <ImageButton 
+                x:Name="Forum"
+                Source ="bulles.png"
+                BackgroundColor="Transparent"
+                AbsoluteLayout.LayoutBounds="0.5,0.8,0.5,0.3"
+                AbsoluteLayout.LayoutFlags="All"
+                Clicked="Forum_OnClicked">
+
+            </ImageButton>
+        </AbsoluteLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

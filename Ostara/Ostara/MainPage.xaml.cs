@@ -17,5 +17,25 @@ namespace Ostara
         {
             InitializeComponent();
         }
+
+        private void Nutrition_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushModalAsync(new NutritionPage());
+        }
+
+        private void Restaurants_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushModalAsync(new RestaurantsPage());
+        }
+
+        private void LaVieDuVegetarien_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushModalAsync(new VegetarianLifePage());
+        }
+
+        private void Settings_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }
