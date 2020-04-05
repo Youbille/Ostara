@@ -13,9 +13,17 @@ namespace Ostara
     public partial class RestaurantsPage : ContentPage
     {
         Grid ListOfRestaurants;
+        
         public RestaurantsPage()
         {
             InitializeComponent();
+            string[] allRestaurants =
+            {
+                "Au bon vegan", "Le valala du fruit", "Avocado Paradise", "Venez manger chez chous", "Vegetarian Shiva",
+                "le festin du lapin"
+            };
+            AddingRestaurants(allRestaurants);
+            
         }
         private void AddingRestaurants(string[] listRestaurants)
         {
@@ -27,6 +35,6 @@ namespace Ostara
                 studiedRestaurant[i].Text = "Restaurant N°" + i;
                 ListOfRestaurants.Children.Add(studiedRestaurant[i],i,0);
             }
-        }
+        }   
     }
 }
