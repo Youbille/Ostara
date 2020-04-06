@@ -6,10 +6,35 @@
              mc:Ignorable="d"
              x:Class="Ostara.VegetarianLifePage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="This is the VegetarianLifePage"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <AbsoluteLayout>
+            <!--<ImageButton x:Name="giveaway"
+                         Source ="jeu_coucours.png"
+                         AbsoluteLayout.LayoutBounds="0,0.4,0.2,0.2"
+                         AbsoluteLayout.LayoutFlags="All"
+                         BackgroundColor="DarkRed"
+                         Clicked="Giveaway_OnClicked">
+            </ImageButton>-->
+            <Button Text ="Concours"
+                    AbsoluteLayout.LayoutBounds="0.1,0.4,0.4,0.2"
+                    AbsoluteLayout.LayoutFlags="All"
+                    BackgroundColor="DarkRed">
+                
+            </Button>
+            <Button Text ="News"
+                    AbsoluteLayout.LayoutBounds="0.9,0.4,0.4,0.2"
+                    AbsoluteLayout.LayoutFlags="All"
+                    BackgroundColor="White">
+            </Button>
+            <Button Text ="Fun Facts"
+                    AbsoluteLayout.LayoutBounds="0.1,0.7,0.4,0.2"
+                    AbsoluteLayout.LayoutFlags="All"
+                    BackgroundColor="ForestGreen">
+            </Button>
+            <Button Text ="Quel légume êtes-vous ?"
+                    AbsoluteLayout.LayoutBounds="0.9,0.7,0.4,0.2"
+                    AbsoluteLayout.LayoutFlags="All"
+                    BackgroundColor="Purple">
+            </Button>
+        </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>

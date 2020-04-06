@@ -16,5 +16,10 @@ namespace Ostara
         {
             InitializeComponent();
         }
+
+        private void Giveaway_OnClicked(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

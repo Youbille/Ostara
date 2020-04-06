@@ -19,7 +19,7 @@ namespace Ostara
             InitializeComponent();
             string[] allRestaurants =
             {
-                "Au bon vegan", "Le valala du fruit", "Avocado Paradise", "Venez manger chez chous", "Vegetarian Shiva",
+                "Au bon vegan", "Le valhalla du fruit", "Avocado Paradise", "Venez manger chez choux", "Vegetarian Shiva",
                 "le festin du lapin"
             };
             AddingRestaurants(allRestaurants);
@@ -36,7 +36,7 @@ namespace Ostara
                 studiedRestaurant[i].Text = listRestaurants[i];
                 if(i%2 == 0) studiedRestaurant[i].BackgroundColor = Color.ForestGreen;
                 else studiedRestaurant[i].BackgroundColor = Color.LimeGreen;
-                ListOfRestaurants.Children.Add(studiedRestaurant[i],0,i);
+                ListOfRestaurants.Children.Add(studiedRestaurant[i],0,i+1);
             }
         }   
     }

@@ -5,20 +5,20 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="Ostara.NutritionPage">
-    <ContentPage.Content>
-        <AbsoluteLayout>
+    <AbsoluteLayout>
             <ImageButton 
-                Source ="vegeBasket.png"               
-                BackgroundColor="Transparent"
-                AbsoluteLayout.LayoutBounds="0.5,0.05,0.5,0.3"
+                Source ="basket-of-vegetables.png"       
+                
+                BackgroundColor="Green"
+                AbsoluteLayout.LayoutBounds="0.5,0.1,0.5,0.3"
                 AbsoluteLayout.LayoutFlags="All"
                 Clicked="Basket_OnClicked">
 
             </ImageButton>
             <ImageButton 
                 Source ="bulles.png"
-                BackgroundColor="Transparent"
-                AbsoluteLayout.LayoutBounds="0.5,0.35,0.5,0.3"
+                BackgroundColor="DarkOliveGreen"
+                AbsoluteLayout.LayoutBounds="0.5,0.5,0.5,0.3"
                 AbsoluteLayout.LayoutFlags="All"
                 Clicked ="News_OnClicked">
 
@@ -26,13 +26,11 @@
             <ImageButton 
                 x:Name="Forum"
                 Source ="journaux.png"
-                BackgroundColor="Transparent"
+                BackgroundColor="ForestGreen"
                 AbsoluteLayout.LayoutBounds="0.5,0.8,0.5,0.3"
                 AbsoluteLayout.LayoutFlags="All"
                 Clicked="Forum_OnClicked">
 
             </ImageButton>
         </AbsoluteLayout>
-        
-    </ContentPage.Content>
 </ContentPage>

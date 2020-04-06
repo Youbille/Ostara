@@ -9,10 +9,21 @@
         <ScrollView x:Name="myScrollView">
             <Grid x:Name="RestaurantsList">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
                     <ColumnDefinition Width="*"/>
                     <!-- here we define that we only need two column the number of rows is defined is C# as it can always change-->
                 </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Label
+                    Text="Filter to be"
+                    TextColor="DarkRed"
+                    HorizontalOptions="CenterAndExpand"
+                    Font="Large"
+                    Grid.Row ="0"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"></Label>
             </Grid>
         </ScrollView>
     </ContentPage.Content>
