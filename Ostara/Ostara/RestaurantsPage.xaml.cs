@@ -31,9 +31,12 @@ namespace Ostara
             ListOfRestaurants = this.FindByName<Grid>("RestaurantsList");
             for (int i = 0; i < listRestaurants.Length; i++)
             {
-                ListOfRestaurants.RowDefinitions.Add(new RowDefinition{Height = new GridLength(200,GridUnitType.Absolute)});//200pixels pour un restaurant
-                studiedRestaurant[i].Text = "Restaurant N°" + i;
-                ListOfRestaurants.Children.Add(studiedRestaurant[i],i,0);
+                studiedRestaurant[i] = new Label();
+                ListOfRestaurants.RowDefinitions.Add(new RowDefinition{Height = new GridLength(100,GridUnitType.Absolute)});//200pixels pour un restaurant
+                studiedRestaurant[i].Text = listRestaurants[i];
+                if(i%2 == 0) studiedRestaurant[i].BackgroundColor = Color.ForestGreen;
+                else studiedRestaurant[i].BackgroundColor = Color.LimeGreen;
+                ListOfRestaurants.Children.Add(studiedRestaurant[i],0,i);
             }
         }   
     }

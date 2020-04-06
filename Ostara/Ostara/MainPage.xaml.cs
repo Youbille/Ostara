@@ -8,8 +8,7 @@ using Xamarin.Forms;
 
 namespace Ostara
 {
-    // Learn more about making custom code visible in the Xamarin.Forms previewer
-    // by visiting https://aka.ms/xamarinforms-previewer
+
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
@@ -20,17 +19,17 @@ namespace Ostara
 
         private void Nutrition_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new NutritionPage());
+            Navigation.PushAsync(new NutritionPage());
         }
 
         private void Restaurants_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new RestaurantsPage());
+            Navigation.PushAsync(new RestaurantsPage());
         }
 
         private void LaVieDuVegetarien_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new VegetarianLifePage());
+            Navigation.PushAsync(new VegetarianLifePage());
         }
 
         private void Settings_Clicked(object sender, EventArgs e)

@@ -16,7 +16,7 @@
 
             </ImageButton>
             <ImageButton 
-                Source ="journaux.png"
+                Source ="bulles.png"
                 BackgroundColor="Transparent"
                 AbsoluteLayout.LayoutBounds="0.5,0.35,0.5,0.3"
                 AbsoluteLayout.LayoutFlags="All"
@@ -25,7 +25,7 @@
             </ImageButton>
             <ImageButton 
                 x:Name="Forum"
-                Source ="bulles.png"
+                Source ="journaux.png"
                 BackgroundColor="Transparent"
                 AbsoluteLayout.LayoutBounds="0.5,0.8,0.5,0.3"
                 AbsoluteLayout.LayoutFlags="All"
