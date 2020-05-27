@@ -5,32 +5,17 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="Ostara.NutritionPage">
-    <AbsoluteLayout>
-            <ImageButton 
-                Source ="basket-of-vegetables.png"       
-                
-                BackgroundColor="Green"
-                AbsoluteLayout.LayoutBounds="0.5,0.1,0.5,0.3"
-                AbsoluteLayout.LayoutFlags="All"
-                Clicked="Basket_OnClicked">
+    <ContentPage.Content>
+        <ScrollView x:Name="scrollRecipes">
+            <Grid x:Name="recipesView">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"/>
 
-            </ImageButton>
-            <ImageButton 
-                Source ="bulles.png"
-                BackgroundColor="DarkOliveGreen"
-                AbsoluteLayout.LayoutBounds="0.5,0.5,0.5,0.3"
-                AbsoluteLayout.LayoutFlags="All"
-                Clicked ="News_OnClicked">
+                    <!-- here we define that we only need two column the number of rows is defined is C# as it can always change-->
+                </Grid.ColumnDefinitions>
 
-            </ImageButton>
-            <ImageButton 
-                x:Name="Forum"
-                Source ="journaux.png"
-                BackgroundColor="ForestGreen"
-                AbsoluteLayout.LayoutBounds="0.5,0.8,0.5,0.3"
-                AbsoluteLayout.LayoutFlags="All"
-                Clicked="Forum_OnClicked">
-
-            </ImageButton>
-        </AbsoluteLayout>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
 </ContentPage>
